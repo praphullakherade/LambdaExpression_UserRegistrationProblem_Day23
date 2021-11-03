@@ -8,25 +8,25 @@ public class UserDetailsTest {
 
     @Test
     public void givenFirstName_IsProper_ReturnTrue() {
-        boolean actualResult = userDetails.firstName("Afroj");
+        boolean actualResult = userDetails.firstName("Sachin");
         Assert.assertEquals(true, actualResult);
     }
 
     @Test
     public void givenFirstName_IsProper_ReturnFalse() {
-        boolean actualResult = userDetails.firstName("afroj");
+        boolean actualResult = userDetails.firstName("sachin");
         Assert.assertEquals(false, actualResult);
     }
 
     @Test
     public void givenLastName_IsProper_ReturnTrue() {
-        boolean actualResult = userDetails.lastName("Satwilkar");
+        boolean actualResult = userDetails.lastName("Tendulkar");
         Assert.assertEquals(true, actualResult);
     }
 
     @Test
     public void givenLastName_IsNotProper_ReturnFalse() {
-        boolean actualResult = userDetails.lastName("satwilkar");
+        boolean actualResult = userDetails.lastName("");
         Assert.assertEquals(false, actualResult);
     }
 
